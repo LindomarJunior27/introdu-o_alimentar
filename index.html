@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução Alimentar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Introdução Alimentar</h1>
+    </header>
+
+    <main>
+        <section id="registro-alimentos">
+            <h2>Registro de Alimentos</h2>
+            <form id="form-alimentos">
+                
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="alimento">Idade:</label>
+                <input type="number" id="idade" name="idade" required>
+
+                <label for="sexo">Sexo:</label>
+                <input type="text" id="sexo" name="sexo" required>
+
+                <label for="alimento">Alimento:</label>
+                <input type="text" id="alimento" name="alimento" required>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="reacao">Reação:</label>
+                <select id="reacao" name="reacao">
+                    <option value="nenhuma">Nenhuma</option>
+                    <option value="alergia">Alergia</option>
+                    <option value="intolerancia">Intolerância</option>
+                    <option value="outra">Outra</option>
+                </select>
+
+                <button type="submit">Salvar</button> <button type="button" onclick="limparFormulario()">Limpar Formulário</button>
+            </form>
+            </form>
+        </section>
+
+        <section id="historico-alimentar">
+            <h2>Histórico Alimentar</h2>
+            <ul id="lista-alimentos">
+                <!-- Os alimentos registrados serão exibidos aqui -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Introdução Alimentar App</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
